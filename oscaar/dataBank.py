@@ -1023,6 +1023,9 @@ class dataBank:
 #         plt.savefig("mcmc_results.png",bbox_inches='tight')     ## Save plot
 #         plt.show()
 
+    def plotLightCurve_multirad_output(self):
+        plt.show()
+
     def plotLightCurve_multirad(self,pointsPerBin=10):
         for apertureRadiusIndex in range(len(self.apertureRadii)):
 
@@ -1044,4 +1047,4 @@ class dataBank:
             axis.set_xlabel(('Time - %i (JD)' % meanTimeInt))
             axis.set_ylabel('Relative Flux')
         plt.ioff()
-        plt.show()
+        self.plotLightCurve_multirad_output()
