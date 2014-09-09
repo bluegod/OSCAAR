@@ -14,7 +14,6 @@ from dataBankFileOutput import dataBankFileOutput
 import sys
 import getopt
 
-
 def main(argv):
     data = None
     conf = None
@@ -42,3 +41,5 @@ def main(argv):
 
 if __name__ == "__main__":
     main(sys.argv[1:])
+else:
+    main('')
